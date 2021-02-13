@@ -12,3 +12,21 @@ NAME2=${2:-friend}
 # echo just means print in BASH
 echo "HELLO $NAME $NAME2!"
 
+# VARIABLES
+	# Uppercase by convention
+	# letters, numbers, underscores.
+
+# USER INPUT
+read -p "Enter 'test' for the test input: " TESTINPUT
+echo "Your input was: ${TESTINPUT}"
+
+# SIMPLE IF STATEMENT"
+if [ $1 == "GUS" ]
+then
+	echo "The first cli argument was equal to $1!"
+	pwd
+	date
+fi
+# ^^ fi is how you end an if statement
+# Be sure to include spaces in brackets
+# pwd is creent file path and date is current date
