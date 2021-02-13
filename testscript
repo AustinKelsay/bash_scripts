@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# ^ That is the shabang line #=sha !=bang
+# Shabang lets BASH know this is a script being written
+
+# $ signifies a variable given via user input
+# The number 1 signifies it is the 1st argument via user input
+# The question mark allows us to give a message if theres is no input
+NAME=${1?Error: no name given}
+# The '-' allows us to have a default variable if none is entered
+NAME2=${2:-friend}
+# echo just means print in BASH
+echo "HELLO $NAME $NAME2!"
+
